@@ -12,19 +12,19 @@ jobs:
       # Exclude the default Python 3.5 build
       - python: 3.5
   include:
-      - arch: arm64
+      - arch: amd64
         env:
           - MB_PYTHON_VERSION=3.6
           - PLAT=aarch64
           - DOCKER_TEST_IMAGE=multibuild/xenial_arm64v8
           - DOCKER_IMAGE=quay.io/pypa/manylinux2014_${PLAT}
-      - arch: arm64
+      - arch: amd64
         env:
           - MB_PYTHON_VERSION=3.7
           - PLAT=aarch64
           - DOCKER_TEST_IMAGE=multibuild/xenial_arm64v8
           - DOCKER_IMAGE=quay.io/pypa/manylinux2014_${PLAT}
-      - arch: arm64
+      - arch: amd64
         env:
           - MB_PYTHON_VERSION=3.8
           - PLAT=aarch64
